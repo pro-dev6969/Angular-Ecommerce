@@ -1,0 +1,29 @@
+{
+  "seller": [
+    {},
+    {
+      "id": "f804",
+      "name": "vedant",
+      "email": "ved@test,com",
+      "password": "1234"
+    },
+    {
+      "id": "8f2f",
+      "name": "ved",
+      "email": "vedu@test.com",
+      "password": "1234"
+    }
+  ],
+  "products": [
+    {
+      "id": "c888",
+      "product_name": "intex",
+      "product_price": "1000"
+    },
+    {
+      "id": "1eed",
+      "product_name": "iphone",
+      "product_price": "2000"
+    }
+  ]
+}
