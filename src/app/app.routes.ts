@@ -13,21 +13,22 @@ export const routes: Routes = [
     },
     {
         path: 'seller-auth',
-        component: SellerAuthComponent,
+        component: SellerAuthComponent
     },
+    // Added Lazy Loading here
     {
         path: 'seller-home',
-        component: SellerHomeComponent,
+        loadComponent: ()=>import('./seller-home/seller-home.component').then((c)=>c.SellerHomeComponent),
         canActivate: [authGuard]
     },
     {
-        component: SellerAddProductComponent,
-        path: 'seller-add-product',
+        path:'seller-add-product',
+        loadComponent:()=>import('./seller-add-product/seller-add-product.component').then((c)=>c.SellerAddProductComponent),
         canActivate: [authGuard]
     },
     {
-        component: UserAuthComponent,
-        path: 'user-auth'
+        path: 'user-auth',
+        loadComponent: ()=>import('./user-auth/user-auth.component').then((c)=>c.UserAuthComponent) 
     }
 ];
 
